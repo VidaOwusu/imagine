@@ -69,6 +69,71 @@ const tweet1 = {
   for (let i =0; i <=10; i++) {
     console.log('Notify friends!', i);
   }
+
+  //Functions
+// Defining functions
+function login(username, password) {
+  if(username == 'Vidash' && password == '1234'){
+    return 'User is logged in!';
+  }else if (username != 'Vidash') {
+    return 'Invalid username!'
+  }else if (password != '1234') {
+    return 'Invalid password!';
+  }else {
+    return 'Invalid username or password!';
+  }
+}
+// Invoking functions
+login('Vidash', '1234');
+
+// Basic Arithmetic
+12 + 34;
+45 - 14;
+7 * 12;
+78 / 4;
+78 % 4;
+
+// Comparison Operators
+2 === 2;
+3 !== 3;
+3 !== 2;
+// Built-in Math Functions
+Math.round(37 / 24);
+Math.floor(37 / 24);
+Math.ceil(37 / 24);
+Math.random();
+Math.max(12, 14, 99, 140);
+Math.ceil(Math.random() * 1000000);
+
+// Order of operations
+1 * 2 + 3 - 4 / 2+ 2**2;
+
+// Handling user inputs
+1200 + Number('250'); 
+1200 - '250';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
