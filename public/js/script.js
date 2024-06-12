@@ -135,6 +135,8 @@ lastname.charAt(0);
 // String conversion
 String(2014);
 
+
+
 // Write a function that will add a participant to our Google Classroom
 const participants = [];
 function addParticipant (email){
@@ -197,6 +199,38 @@ function even(number){
   return number % 2 === 0;
 }
 numbers.filter(even);
+
+// Write a function that takes a user with name and dateOfBirth and returns true if their birthday is today else false
+// const user = {
+//   name: 'Martin King',
+//   dateOfBirth: '1990/06/12'
+// }
+function isBirthday(){
+  const today = new Date();
+  const birthDate = new Date(user.dateOfBirth)
+  // DEBUGBGING
+  // console.log(birthDate.getMonth(), today.getMonth());
+  // console.log(birthDate.getDate(), today.getDate());
+  if (today.getMonth() === birthDate.getMonth() && today.getDate() === birthDate.getDate()){
+  return true;
+   }else{
+   return false; 
+  }
+}
+isBirthday(user);
+
+// Write a function that takes a user with name and dateOfBirth and returns birthday with their name if their birthday is today else return not your day
+  function birthdayGreeting(){
+    if(isBirthday(user)){
+      return `Happy Birthday,${user.name}`;
+    }else{
+      return 'Not Yet';
+    }
+  }
+birthdayGreeting();
+
+    
+  
 
 
 
